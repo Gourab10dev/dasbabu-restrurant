@@ -49,6 +49,7 @@ body {
 .contact-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 50px;
 }
 
@@ -128,23 +129,41 @@ button {
 button:hover {
     background: #b8962e;
 }
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .contact-container {
-        display: flex;
         flex-direction: column;
-        gap: 20px;
-        align-items: center;
+        padding: 20px;
     }
-
-    .contact-info,
-    .contact-form {
+    .contact-section {
+        background-size: cover;
+        background-position: center;
+    }
+    .contact-left,
+    .contact-right {
         width: 100%;
     }
-
-    .row {
-        flex-direction: column;
-        gap: 10px;
+    .contact-left {
+        margin-bottom: 20px;
+    }
+    .contact-right input,
+    .contact-right textarea{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contact-right button {
+        width: 100%;
+    }
+    h1{
+        font-size: 28px;
+    }
+    p {
+        font-size: 14px;
     }
 }
