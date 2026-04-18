@@ -2,7 +2,7 @@ body{
     font-family:'Playfair Display', serif;
     margin: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') repeat center/cover;
-    height: 200vh;
+    min-height: 100vh;
     color: white;
     position: relative;
 }
@@ -76,4 +76,59 @@ h1 {
     width: 300px;
     text-align: center;
     box-shadow: 0 0 20px black;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    body {
+        height: auto; /* FIX scrolling issue */
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin: 15px;
+    }
+
+    .category {
+        font-size: 16px;
+        padding: 8px 25px;
+    }
+
+    /* GRID FIX (MOST IMPORTANT) */
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .card {
+        min-height: auto;
+        padding: 10px;
+    }
+
+    .card img {
+        height: 140px;
+    }
+
+    .card button {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .popup {
+        width: 90%;
+    }
+}
+@media (max-width: 480px) {
+
+    .card-container {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
