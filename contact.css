@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND */
+.contact {
+    background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') no-repeat center/cover;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(24, 24, 24, 0.75);
+    height: 100%;
+    padding: 60px 10%;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.desc {
+    text-align: center;
+    font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    opacity: 0.8;
+}
+
+/* LAYOUT */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* LEFT SIDE */
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h4 {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #d4af37;
+}
+
+.contact-info p {
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+/* SOCIAL */
+.social {
+    margin-top: 10px;
+}
+
+.social span {
+    display: inline-block;
+    background: #d4af37;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 6px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* RIGHT SIDE */
+.contact-form {
+    width: 60%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* INPUT ROW */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+input, textarea {
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* BUTTON */
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #d4af37;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+button:hover {
+    background: #b8962e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
