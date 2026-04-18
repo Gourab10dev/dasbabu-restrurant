@@ -9,11 +9,10 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') repeat center/cover;
     min-height: 100vh;
     color: white;
-    position: relative;
 }
 h1 {
     color: white;
-    font-size: 55px;
+    font-size: 45px;
     text-align: center;
     margin: 20px 0;
 }
@@ -23,7 +22,7 @@ h1 {
     grid-template-columns: repeat(4,1fr);
     row-gap: 25px;
     column-gap: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 .card {
     padding: 15px;
