@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+}
 body{
     font-family:'Playfair Display', serif;
     margin: 0;
@@ -10,21 +15,9 @@ h1 {
     color: white;
     font-size: 55px;
     text-align: center;
-    margin: 20px;
+    margin: 20px 0;
 }
-.category{
-    width: fit-content;
-    margin: 20px auto;
-    padding: 10px 50px;
-    background: linear-gradient(135deg, #fdff86, #ff7272);
-    color: #000000;
-    font-size: 22px;
-    font-weight: bold;
-    font-family:'Pacifico',cursive;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0, 0.2);
-    text-align: center;
-}
+
 .card-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -60,75 +53,30 @@ h1 {
     color: black;
     font-size: 15px;
     font-family: 'Pacifico',cursive;
+    cursor: pointer;
 }
 .offwhite{
     background: rgb(255, 249, 170);
 }
-.popup{
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 0 20px black;
-}
 
 /* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-
-    body {
-        height: auto; /* FIX scrolling issue */
-        background-size: cover;
-        background-position: center;
-    }
-
-    h1 {
-        font-size: 28px;
-        margin: 15px;
-    }
-
-    .category {
-        font-size: 16px;
-        padding: 8px 25px;
-    }
-
-    /* GRID FIX (MOST IMPORTANT) */
-    .card-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-        gap: 15px;
-        padding: 10px;
-    }
-
-    .card {
-        min-height: auto;
-        padding: 10px;
-    }
-
-    .card img {
-        height: 140px;
-    }
-
-    .card button {
-        font-size: 13px;
-        padding: 8px;
-    }
-
-    .popup {
-        width: 90%;
-    }
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-@media (max-width: 480px) {
 
-    .card-container {
-        grid-template-columns: 1fr; /* 1 card per row */
-    }
+/* MOBILE (1 CARD PER ROW) */
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
 
-    h1 {
-        font-size: 24px;
-    }
+  h1 {
+    font-size: 28px;
+  }
+
+  .card img {
+    height: 200px;
+  }
 }
