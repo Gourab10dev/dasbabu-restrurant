@@ -95,6 +95,9 @@ footer {
   .card img {
     height: 200px;
   }
+  .card button {
+    font-family: 'Pacifico',cursive;
+  }
   .menu-header img {
     width: 200px;
   }
