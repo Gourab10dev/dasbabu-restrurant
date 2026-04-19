@@ -16,9 +16,12 @@
 body{
     font-family:'Playfair Display', serif;
     margin: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
+                url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') repeat center/cover;
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
-    color: white;
+    
 }
 h1 {
     color: white;
