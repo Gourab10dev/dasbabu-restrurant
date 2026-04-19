@@ -68,7 +68,7 @@ h1 {
 /* MOBILE (1 CARD PER ROW) */
 @media (max-width: 600px) {
   .card-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   h1 {
