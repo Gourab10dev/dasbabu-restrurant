@@ -3,6 +3,16 @@
     padding: 0;;
     box-sizing: border-box;
 }
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.menu-header img{
+    width: 300px;
+    max-width: 80%;
+}
 body{
     font-family:'Playfair Display', serif;
     margin: 0;
@@ -84,5 +94,8 @@ footer {
 
   .card img {
     height: 200px;
+  }
+  .menu-header img {
+    width: 140px;
   }
 }
