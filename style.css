@@ -57,15 +57,15 @@ footer {
     font-size: 14px;
 }
 /* ================= MOBILE (≤600px) ================= */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     /* HEADER */
     header {
-        padding: 10px 10px 20px;
+        padding: 0 15px;
     }
 
     header img {
-        width: 200px; /* smaller logo */
+        width: 160px;
     }
 
     /* NAVBAR */
@@ -73,21 +73,22 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
     }
 
     nav a {
         margin: 6px 8px; /* reduce spacing */
-        font-size: 15px;
+        font-size: 16px;
     }
 
     /* TEXT */
     h2 {
-        font-size: 25px;
+        font-size: 16px;
         margin-top: 20px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 18px;
         padding: 0 12px;
     }
 
