@@ -56,44 +56,64 @@ footer {
     margin-top: auto;
     font-size: 14px;
 }
-/* ================= MOBILE (≤600px) ================= */
+/* MOBILE RESPONSIVE DESIGN */
 @media (max-width: 768px) {
 
-    /* HEADER */
+    body {
+        padding: 10px;
+        background-position: center;
+    }
+
     header {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    header img {
-        width: 160px;
-    }
-
-    /* NAVBAR */
-    nav {
-        display: flex;
-    }
-
-    nav a {
-        margin: 6px 8px; /* reduce spacing */
+        padding-top: 15px;
+        padding-bottom: 20px;
         font-size: 16px;
     }
 
-    /* TEXT */
+    header img {
+        width: 220px;   /* smaller but clean */
+        max-width: 100%;
+    }
+
+    nav a {
+        display: block;          /* stack menu */
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
     h2 {
-        font-size: 34px;
-        margin-top: 20px;
+        font-size: 28px;   /* adjusted for mobile */
+        padding: 10px;
     }
 
     p {
-        font-size: 18px;
-        max-width: 320px;
-        margin: 10px auto;
+        font-size: 16px;
+        padding: 0 10px;
     }
 
-    /* FOOTER */
     footer {
         font-size: 12px;
-        padding: 6px;
+        padding: 8px;
+    }
+}
+
+
+/* EXTRA SMALL DEVICES (phones) */
+@media (max-width: 480px) {
+
+    header img {
+        width: 180px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 16px;
     }
 }
