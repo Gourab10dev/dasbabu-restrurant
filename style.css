@@ -76,7 +76,7 @@ footer {
     }
 
     nav a {
-        display: flex;          /* stack menu */
+        display: none;          /* stack menu */
         margin: 10px 0;
         font-size: 18px;
     }
