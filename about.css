@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+                url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container Card */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    background: black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url('https://images.unsplash.com/photo-1550547660-d9450f859349');
+    
+    background-size: cover;
+    background-position: center;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* Content */
+.content {
+    color: white;
+    width: 50%;
+    padding-left: 200px;
+
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+}

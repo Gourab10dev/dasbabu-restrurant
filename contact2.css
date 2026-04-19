@@ -6,40 +6,66 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-}
-
-/* BACKGROUND */
-.contact {
-    background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') no-repeat center/cover;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+                url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    color: white;
-    position: relative;
 }
 
-.overlay {
-    background: rgba(24, 24, 24, 0.75);
-    height: 100%;
-    padding: 60px 10%;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 /* TITLE */
 .title {
+    padding-top: 10px;
     text-align: center;
+    color: white;
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
 .subtitle {
     text-align: center;
-    font-size: 16px;
+    color: white;
+    font-size: 18px;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
 .desc {
     text-align: center;
-    font-size: 14px;
+    color: white;
+    font-size: 16px;
     max-width: 600px;
     margin: 0 auto 40px;
     opacity: 0.8;
@@ -56,17 +82,19 @@ body {
 /* LEFT SIDE */
 .contact-info {
     width: 40%;
+    padding-left: 150px;
 }
 
 .contact-info h4 {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 15px;
     color: #d4af37;
 }
 
 .contact-info p {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 2px;
+    color: white;
 }
 
 /* SOCIAL */
@@ -87,7 +115,8 @@ body {
 
 /* RIGHT SIDE */
 .contact-form {
-    width: 60%;
+    width: 52%;
+    padding-right: 120px;
 }
 
 .contact-form form {
@@ -111,7 +140,7 @@ input, textarea {
 }
 
 textarea {
-    height: 100px;
+    height: 120px;
     resize: none;
 }
 
@@ -129,10 +158,12 @@ button {
 button:hover {
     background: #b8962e;
 }
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
 }
 
 /* RESPONSIVE */
