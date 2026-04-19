@@ -56,10 +56,10 @@ footer {
     margin-top: auto;
     font-size: 14px;
 }
-/* TABLET */
+/* DESKTOP */
 @media (min-width: 768px) {
     header img {
-        width: 350px;
+        width: 400px;
     }
 
     nav a {
@@ -68,18 +68,18 @@ footer {
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 40px;
     }
 
     p {
         font-size: 20px;
     }
 }
-
+/* MOBILE */
 @media (max-width: 767px) {
 
     header img {
-        width: 160px;
+        width: 200px;
     }
 
     nav {
@@ -94,11 +94,11 @@ footer {
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 20px;
         padding: 0 10px;
     }
 }
