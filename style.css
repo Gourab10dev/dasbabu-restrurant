@@ -38,7 +38,6 @@ nav a {
     margin: 10px 15px;
     color: white;
     text-decoration: none;
-    display: inline-block;
     font-size: 18px;
     transition: 0.3s;
 }
@@ -71,14 +70,11 @@ footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin-top: auto;
     font-size: 14px;
 }
-
-/* ========================= */
 /* TABLET (<= 768px) */
-/* ========================= */
 @media (max-width: 768px) {
 
     header img {
@@ -105,10 +101,7 @@ footer {
         font-size: 16px;
     }
 }
-
-/* ========================= */
 /* MOBILE (<= 480px) */
-/* ========================= */
 @media (max-width: 480px) {
 
     header img {
@@ -131,10 +124,7 @@ footer {
         font-size: 12px;
     }
 }
-
-/* ========================= */
 /* LARGE SCREENS (>= 1200px) */
-/* ========================= */
 @media (min-width: 1200px) {
 
     header img {
@@ -142,7 +132,7 @@ footer {
     }
 
     h2 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     p {
