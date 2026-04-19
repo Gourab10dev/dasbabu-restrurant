@@ -71,7 +71,7 @@ footer {
 
     /* NAVBAR */
     nav {
-        display: none;
+        display: flex;
     }
 
     nav a {
