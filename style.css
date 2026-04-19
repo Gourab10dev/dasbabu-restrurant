@@ -1,39 +1,54 @@
-body{
-    font-family:Arial, sans-serif;
+/* RESET + BASE */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-header{
+
+/* HEADER */
+header {
     color: rgb(129, 10, 10);
-    padding: 15px;
+    padding: 20px 10px 40px;
     text-align: center;
     font-size: 18px;
-    padding-top: 20px;
-    padding-bottom: 40px;
 }
-header img{
+
+header img {
     width: 350px;
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
+
+/* NAVIGATION */
 nav {
     text-align: center;
 }
+
 nav a {
-    margin: 15px;
+    margin: 10px 15px;
     color: white;
     text-decoration: none;
     display: inline-block;
+    font-size: 18px;
+    transition: 0.3s;
 }
-nav a:hover{
+
+nav a:hover {
     transform: scale(1.05);
     color: rgb(255, 210, 75);
 }
+
+/* CONTENT */
 h2 {
     margin-top: 25px;
     text-align: center;
@@ -42,65 +57,66 @@ h2 {
     color: white;
     margin-bottom: 5px;
 }
+
 p {
     margin-top: 0;
     text-align: center;
     font-size: 20px;
     color: whitesmoke;
+    padding: 0 20px;
 }
+
+/* FOOTER */
 footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     margin-top: auto;
     font-size: 14px;
 }
-/* MOBILE RESPONSIVE DESIGN */
+
+/* ========================= */
+/* TABLET (<= 768px) */
+/* ========================= */
 @media (max-width: 768px) {
 
-    body {
-        padding: 10px;
-        background-position: center;
-    }
-
-    header {
-        padding-top: 15px;
-        padding-bottom: 20px;
-        font-size: 16px;
-    }
-
     header img {
-        width: 220px;
-        max-width: 100%;
+        width: 250px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav a {
-        display: block;  
-        margin: 10px 0;
+        display: block;
+        margin: 8px 0;
         font-size: 18px;
     }
 
     h2 {
-        font-size: 28px;
-        padding: 10px;
+        font-size: 30px;
     }
 
     p {
         font-size: 16px;
-        padding: 0 10px;
-    }
-
-    footer {
-        font-size: 12px;
-        padding: 8px;
     }
 }
-/* EXTRA SMALL DEVICES (phones) */
+
+/* ========================= */
+/* MOBILE (<= 480px) */
+/* ========================= */
 @media (max-width: 480px) {
 
     header img {
         width: 180px;
+    }
+
+    nav a {
+        font-size: 16px;
     }
 
     h2 {
@@ -111,7 +127,25 @@ footer {
         font-size: 14px;
     }
 
-    nav a {
-        font-size: 16px;
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* ========================= */
+/* LARGE SCREENS (>= 1200px) */
+/* ========================= */
+@media (min-width: 1200px) {
+
+    header img {
+        width: 400px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 22px;
     }
 }
