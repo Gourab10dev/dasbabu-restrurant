@@ -1,8 +1,9 @@
 body{
-    font-family:Arial;
+    font-family:Arial, sans-serif;
     margin: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -17,14 +18,18 @@ header{
 }
 header img{
     width: 360px;
-    display: block;
+    max-width: 90%;
     margin: 0 auto;
     padding-bottom: 10px;
+}
+nav {
+    text-align: center;
 }
 nav a {
     margin: 30px;
     color: white;
     text-decoration: none;
+    display: inline-block;
 }
 nav a:hover{
     transform: scale(1.05);
@@ -49,4 +54,73 @@ footer {
     text-align: center;
     padding: 5px;
     margin-top: auto;
+    font-size: 14px;
+}
+/* TABLET */
+@media (min-width: 768px) {
+    header img {
+        width: 350px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 5px 18px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    header img {
+        width: 160px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 8px 10px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+
+/* ================= TABLET (768px–1023px) ================= */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    header img {
+        width: 240px;
+    }
+
+    nav a {
+        margin: 15px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
 }

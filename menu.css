@@ -57,6 +57,13 @@ h1 {
 .offwhite{
     background: rgb(255, 249, 170);
 }
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+}
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 992px) {
