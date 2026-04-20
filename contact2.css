@@ -212,4 +212,14 @@ footer {
     button {
         width: 100%;
     }
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
